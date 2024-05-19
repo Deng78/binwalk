@@ -123,7 +123,7 @@ function install_ubireader
 function install_pip_package
 {
     PACKAGE="$1"
-    $SUDO $PYTHON -mpip install $PACKAGE
+    $SUDO pip3 install $PACKAGE
 }
 
 function find_path
