@@ -37,7 +37,7 @@ else
     distro="${2:-$(lsb_release -i|cut -f 2)}"
     distro_version="${2:-$(lsb_release -r|cut -f 2|cut -c1-2)}"
 fi
-REQUIRED_UTILS="wget tar python"
+REQUIRED_UTILS="wget tar python3"
 APTCMD="apt"
 APTGETCMD="apt-get"
 YUMCMD="yum"
