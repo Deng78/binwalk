@@ -53,7 +53,7 @@ then
 elif [ $distro_version = "16" ]
 then
     APT_CANDIDATES="git locales build-essential libqt4-opengl mtd-utils gzip bzip2 tar arj lhasa p7zip p7zip-full cabextract cramfsprogs cramfsswap squashfs-tools zlib1g-dev liblzma-dev liblzo2-dev sleuthkit default-jdk lzop srecord cpio"
-elif [ $distro_version = "18" ]
+elif [ $distro_version = "18" || $distro_version = "24" ]
 then
     APT_CANDIDATES="git locales build-essential libqt4-opengl mtd-utils gzip bzip2 tar arj lhasa p7zip p7zip-full cabextract cramfsswap squashfs-tools zlib1g-dev liblzma-dev liblzo2-dev sleuthkit default-jdk lzop srecord cpio"
 else
@@ -242,7 +242,7 @@ install_yaffshiv
 install_jefferson
 install_ubireader
 
-if [ $distro_version = "18" ]
+if [ $distro_version = "18" || $distro_version = "24" ]
 then
 install_cramfstools
 fi
